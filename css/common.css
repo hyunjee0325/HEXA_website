@@ -3,33 +3,72 @@
 root
 ---------------------------------------------
 */
-:root{
+:root {
   /* font */
-  --f-m-color : #2a2a2a;
-  --f-g-color : #aaa;
-  --f-n-size : .9375rem;
- 
- 
+  --f-m-color: #2a2a2a;
+  --f-g-color: #aaa;
+  --f-n-size: 0.9375rem;
+
   /* color */
-  --bg-color : #2a2a2a;
- 
- 
+  --bg-color: #2a2a2a;
+
   /* element interval */
-  --el-s-interval : 1.875rem;
- }
- 
- /*
+  --el-s-interval: 1.875rem;
+}
+
+/*
 ---------------------------------------------
 container - fit center element
 ---------------------------------------------
 */
-.container{
-  width: 1200px;
+.container {
+  width: 100%;
+  max-width: 1280px;
   height: auto;
   margin: auto;
 }
 
+/* Sub Section Padding */
+.sub-section {
+  padding: 5.625rem 0;
+}
+
 /* dot button */
-.dot-bottom{
+.dot-bottom {
   border-bottom: 2px dotted #eee;
+}
+
+/* common button style */
+.common-btn {
+  font-size: 0.875rem;
+  border: 1px solid #fff;
+  font-weight: 500;
+  color: #fff;
+  width: fit-content;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.4s;
+}
+
+.common-btn:hover {
+  color: var(--f-m-color);
+  background: #fff;
+}
+
+/* Section Title style */
+.section-title {
+  width: 100%;
+  height: auto;
+}
+
+.section-title h3 {
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: var(--f-m-color);
+}
+
+.section-title p {
+  font-size: 0.875rem;
+  color: var(--f-g-color);
+  font-style: italic;
+  font-weight: 400;
 }
